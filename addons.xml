@@ -1,56 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="script.get.update" name="STUBE.BOX Updater" version="21.0.1" provider-name="Python">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-    </requires>
-    <extension point="xbmc.python.script" library="main.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="de_DE">STUBE.BOX Update</summary>
-        <description lang="de_DE"></description>
-        <language></language>
-        <platform>all</platform>
-        <license>unlicense</license>
-        <forum></forum>
-        <website></website>
-        <email></email>
-        <source></source>
-        <news></news>
-        <disclaimer></disclaimer>
-        <assets>
+<addon id="plugin.video.stalker.macsimum" name="[COLORred]Stalker[/COLOR][COLORgrey]Mac[/COLOR]:simum" version="21.5.9" provider-name="[COLOR orange]mod_by_Adrian[/COLOR]">
+	<requires>
+		<import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests"/>
+	    <import addon="script.module.infotagger"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon_run.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>true</reuselanguageinvoker>
+		<platform>all</platform>
+		<summary></summary>
+		<description lang="de">STALKER PORTAL...LiveTV, Movies, TVShows 4 KODi</description>
+		<platform>all</platform>
+		<assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
+            <screenshot>resources/media/screenshots/screenshot1.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot2.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot3.jpg</screenshot>
         </assets>
     </extension>
 </addon>
 
-<addon
-  id="skin.stubebox.omega"
-  version="21.3.7a"
-  name="STUBE.BOX.omega.SKIN"
-  provider-name="Adrian - Skin-Mod for STUBE.BOX">
-	<requires>
-		<import addon="xbmc.gui" version="5.17.0"/>
-	</requires>
-	<extension
-	  point="xbmc.gui.skin"
-	  debugging="false"
-	  effectslowdown="0.35">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">STUBE.BOXomega Skin</summary>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<source>https://github.com/braz96/skin.mimic</source>
+<addon id="script.module.pvr" version="21.1.9" name="pvrscript" provider-name="Legacy">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+		<import addon="pvr.stalker"/>
+    </requires>
+	<extension point="xbmc.python.script" library="startup.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>External Plugin</summary>
+        <description lang="en">External Plugin</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GPLv2</license>
 		<assets>
-			<icon>resources/icon.png</icon>
-		</assets>
-	</extension>
+        <icon>logo.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.mediabox" name="MEDIA.BOX" version="21.1.7" provider-name="TEAM.STUBE">
+    <requires>
+<import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">MEDIA.BOX</summary>
+        <summary lang="de">MEDIA.BOX</summary>
+        <language>de</language>
+        <description lang="en">KODI-VAVOO-TV-Stube</description>
+        <description lang="de">KODI-VAVOO-TV-Stube</description>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <source></source>
+        <forum></forum>
+        <email></email>
+        <website></website>
+    </extension>
 </addon>
 </addons>
