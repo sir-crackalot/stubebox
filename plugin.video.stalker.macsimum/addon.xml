@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.stalker.macsimum" name="[COLORred]Stalker[/COLOR][COLORgrey]Mac[/COLOR]:simum" version="21.5.9" provider-name="[COLOR orange]mod_by_Adrian[/COLOR]">
+	<requires>
+		<import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests"/>
+	    <import addon="script.module.infotagger"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon_run.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>true</reuselanguageinvoker>
+		<platform>all</platform>
+		<summary></summary>
+		<description lang="de">STALKER PORTAL...LiveTV, Movies, TVShows 4 KODi</description>
+		<platform>all</platform>
+		<assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+            <screenshot>resources/media/screenshots/screenshot1.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot2.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot3.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
